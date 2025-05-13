@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Updated Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .header, .footer {
+      background-color: #3cb371; /* Green */
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .layout {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 15%;
+      background-color: cyan;
+    }
+
+    .main {
+      width: 70%;
+    }
+
+    .multicol {
+      background-color: yellow;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .content {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .box {
+      background-color: #a9a9a9; /* Cement/gray color */
+      flex: 1;
+      height: 200px;
+      margin: 5px;
+    }
+
+    .bottom-bar {
+      background-color: yellow;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .white-bar {
+      background-color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">Header</div>
+
+  <div class="layout">
+    <div class="sidebar"></div>
+
+    <div class="main">
+      <div class="multicol"></div>
+
+      <div class="content">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+      </div>
+
+      <div class="bottom-bar"></div>
+      <div class="white-bar"></div>
+    </div>
+
+    <div class="sidebar"></div>
+  </div>
+
+  <div class="footer">Footer</div>
+
+</body>
+</html>
